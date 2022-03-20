@@ -51,7 +51,7 @@ namespace Backend_projekt.Controllers
             if (!String.IsNullOrEmpty(searchString))
             {
                 book = book.Where(s => s.Book_Title!.Contains(searchString));
-            }
+            } 
             return await book.ToListAsync();
         }
 
